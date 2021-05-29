@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scripts.js" defer type="module"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="banner">
+        <img src="./img/utn.png" alt="logo" class="logo">
+        <div class="divButtonnNav">
+            <button id="buttonPlus" class="buttonNav"><img src="./img/icons8_car_32.png" alt="navBar" class="navBar">
+            </button>
+        </div>
+    </header>
+    <div id="divPrincipal" style="display: none;">
+        <div id="divSecundario">
+            <form name="formul">
+                <div class="divCerrar">
+                    <button id="cerrar">X</button>
+                </div>
+                <div class="divInputsLabels">
+                    <input type="text" id="txtId" style="visibility: hidden">
+                    <label>Marca: </label><input type="text" id="inputNombre" style="min-width: 70%;">
+                    <label>Modelo: </label><input type="text" id="inputModel">
+                    <label>Año</label>
+                    <select name="select" id="select">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+                <div class="divButtons">
+                    <button id="alta">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="table">
+        <h1>Lista de Autos</h1>
+        <section class="divContainer">
+            <div id="divTabla"></div>
+        </section>
+    </div>
+
+    <div class="spinnerContainer" id="spinnerContainer">
+        <div class="sk-circle" id="spinnerCircle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
