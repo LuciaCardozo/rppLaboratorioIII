@@ -77,10 +77,10 @@ function altaFetch(object) {
         .then(data => {
             limpiarFormulario();
             divTabla.innerHTML = "";
-            spinner.style.visibility = "visible";
+            spinnerContainer.style.visibility = "visible";
             setTimeout(() => {
                 divTabla.appendChild(crearTabla(listaAux));
-                spinner.style.visibility = "hidden";
+                spinnerContainer.style.visibility = "hidden";
             }, 2000);
         })
         .catch(error => {
