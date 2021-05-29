@@ -75,6 +75,7 @@ function altaFetch(object) {
             return res.ok ? res.json() : Promise.reject(res);
         })
         .then(data => {
+            listaAux.push(data);
             limpiarFormulario();
             divTabla.innerHTML = "";
             spinnerContainer.style.visibility = "visible";
@@ -91,10 +92,8 @@ function altaPersona(e) {
     e.preventDefault();
     inputNombre.style.border = "black";
     inputModel.style.border = "black";
-        console.log(inputYear.selectedIndex);
     let autoJson = { id: inputId.value, make: inputNombre.value, model: inputModel.value, year: inputYear.value};
     if(autoJson.make.length>=3 && autoJson.model.length>=3){
-        listaAux.push(autoJson);
         altaFetch(autoJson);
     }else{
         inputNombre.style.border = "2px solid red";
